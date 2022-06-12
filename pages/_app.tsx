@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Provider store={store}>
+        <nav className='text-primary-two bg-primary-one sm:text-primary-one sm:bg-primary-two'>Navigation</nav>
         <Component {...pageProps} />
+        <footer>bottom</footer>
       </Provider>
     </>
   );
